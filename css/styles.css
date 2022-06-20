@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Big+Shoulders+Display:wght@700&family=Fredoka+One&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lobster&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.main {
+  display: grid;
+  grid-template-columns: 20px 330px 20px;
+  grid-template-rows: 90px 230px 55px 575px 50px;
+  grid-column-gap: 2.5px;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(../images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+}
+.article {
+  grid-area: 2 / 2 / 3 / 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 95px 135px;
+}
+.article-tittle {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.article-description {
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+.section {
+  grid-area: 4 / 2 / 5 / 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90px 475px;
+  grid-row-gap: 10px;
+}
+.section-info {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: hsl(248, 32%, 49%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  box-shadow: 0px 3px 1px 1px #44485663;
+}
+.section-info > p {
+  margin: 0 4rem;
+  font-weight: 400;
+}
+.free {
+  color: white;
+  font-weight: 700;
+}
+.section-form {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: white;
+  box-shadow: 4px 3px 1px 1px #44485663;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 20px 140px 100px 50px 20px;
+  grid-template-rows: 20px 55px 20px 55px 20px 55px 20px 55px 20px 60px 10px 40px 20px;
+}
+/*nOMBRE*/
+.inputN {
+  grid-area: 2 / 2 / 3 / 5;
+  display: grid;
+  grid-template-columns: 20px 230px 25px 10px;
+  grid-template-rows: 10px 35px 10px;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 0.5rem;
+}
+.inputN.E {
+  border: 3px solid hsl(0, 100%, 74%);
+}
+.input-n {
+  grid-area: 2 / 2 / 3 / 5;
+  border: 0;
+  outline: none;
+}
+.error-n {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.msg-errorN {
+  grid-area: 3 / 3 / 4 / 5;
+}
+.msgN {
+  visibility: hidden;
+  opacity: 0;
+}
+/*---------------------------------------*/
+
+/*APELLIDO*/
+.inputL {
+  grid-area: 4 / 2 / 5 / 5;
+  display: grid;
+  grid-template-columns: 20px 230px 25px 10px;
+  grid-template-rows: 10px 35px 10px;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 0.5rem;
+}
+.inputL.E {
+  border: 3px solid hsl(0, 100%, 74%);
+}
+.input-l {
+  grid-area: 2 / 2 / 3 / 5;
+  border: 0;
+  outline: none;
+}
+.error-l {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.msg-errorL {
+  grid-area: 5 / 3 / 6 / 5;
+}
+.msgL {
+  visibility: hidden;
+  opacity: 0;
+}
+/*---------------------------------------*/
+/*CORREO*/
+.inputE {
+  grid-area: 6 / 2 / 7 / 5;
+  display: grid;
+  grid-template-columns: 20px 230px 25px 10px;
+  grid-template-rows: 10px 35px 10px;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 0.5rem;
+}
+.inputE.E {
+  border: 3px solid hsl(0, 100%, 74%);
+}
+.input-e {
+  grid-area: 2 / 2 / 3 / 5;
+  border: 0;
+  outline: none;
+}
+.error-e {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.msg-errorE {
+  grid-area: 7 / 3 / 8 / 5;
+}
+.msgE {
+  visibility: hidden;
+  opacity: 0;
+}
+/*---------------------------------------*/
+/*CONTRASEÑA*/
+.inputP {
+  grid-area: 8 / 2 / 9 / 5;
+  display: grid;
+  grid-template-columns: 20px 230px 25px 10px;
+  grid-template-rows: 10px 35px 10px;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 0.5rem;
+}
+.inputP.E {
+  border: 3px solid hsl(0, 100%, 74%);
+}
+.input-p {
+  grid-area: 2 / 2 / 3 / 5;
+  border: 0;
+  outline: none;
+}
+.error-p {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.msg-errorP {
+  grid-area: 9 / 3 / 10 / 5;
+}
+.msgP {
+  visibility: hidden;
+  opacity: 0;
+}
+/*---------------------------------------*/
+.noactive {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+}
+.active {
+  visibility: visible;
+  opacity: 1;
+  color: hsl(0, 100%, 74%);
+  font-size: 10px;
+  transition: all 0.6s ease-in-out;
+}
+.inputS {
+  grid-area: 10 / 2 / 11 / 5;
+}
+
+::placeholder {
+  color: hsl(246, 25%, 77%);
+  font-weight: 600;
+  font-family: "Poppins";
+}
+.button {
+  width: 280px;
+  height: 60px;
+  margin: 0 0 0.5rem 0;
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 1rem;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.button.click {
+  opacity: 0.5;
+}
+.termsAndServices {
+  grid-area: 12 / 2 / 13 / 5;
+  color: hsl(246, 25%, 77%);
+}
+.termsAndServices > p {
+  margin: 0px 30px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.tys {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+  cursor: pointer;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: black;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/*----------------PARA PC---------------------------------*/
+@media only screen and (min-width: 1300px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main {
+    background-image: url(../images/bg-intro-desktop.png);
+
+    display: grid;
+    grid-template-columns: 150px 530px 50px 560px 150px;
+    grid-template-rows: 115px 145px 285px 155px 100px;
+    width: 100vw;
+    height: 100%;
+  }
+  .article{
+    grid-area: 3 / 2 / 4 / 3;
+    text-align: left;
+  }
+  .article-tittle{
+    justify-content: flex-start;
+    font-size: 29px;
+    margin-right: 9rem;
+  }
+  .article-description{
+    align-items: flex-end;
+  }
+  .section{
+    grid-area: 2 / 4 / 5 / 5;
+  }
+  .section-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputN,.inputL,.inputE,.inputP,.inputS{
+    width: 30rem;
+  }
+  .button{
+    width: 30rem;
+  }
+  input{
+    width: 28rem;
+    border: 1px solid black;
+  }
+  .error-n,.error-l,.error-e,.error-p{
+    margin-left: 11rem;
+  }
+  .msg-errorN,.msg-errorL,.msg-errorE,.msg-errorP{
+    margin-left: 20rem;
+  }
+}
